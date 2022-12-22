@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="144dp"
+        android:text="Name :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/uiEtUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textview"
+        app:layout_constraintVertical_bias="0.384"
+        tools:ignore="DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text=" Email :"
+        app:layout_constraintStart_toStartOf="@+id/textview"
+        app:layout_constraintTop_toBottomOf="@+id/textview" />
+
+    <EditText
+        android:id="@+id/uiEtUserEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/uiEtUserName"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.765" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:text="Password :"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/uiEtUserPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/uiEtUserEmail"
+        app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="Gender :"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Spinner
+        android:id="@+id/uiSpUserGender"
+        android:layout_width="204dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/uiEtUserPassword"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/uiSubmitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+</android.support.constraint.ConstraintLayout>
+
+<?xml version="1.0" encoding="utf-8"?>
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:id="@+id/linearLayout"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="#F8ECEC"-->
+<!--    android:orientation="vertical"-->
+<!--    app:layoutDescription="@xml/activity_main_scene"-->
+<!--    tools:context=".MainActivity">-->
+
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/linearLayout2"-->
+    <!--        android:layout_width="381dp"-->
+    <!--        android:layout_height="369dp"-->
+    <!--        android:background="@drawable/background"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:padding="10px"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent">-->
+
+    <!--        <com.google.android.material.textfield.TextInputLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="71dp"-->
+    <!--            android:padding="10dp">-->
+
+    <!--            <com.google.android.material.textfield.TextInputEditText-->
+    <!--                android:id="@+id/uiEtusername"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="65dp"-->
+    <!--                android:hint="Enter username :"-->
+    <!--                android:padding="20dp" />-->
+    <!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+    <!--        <com.google.android.material.textfield.TextInputLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:padding="10dp">-->
+
+    <!--            <com.google.android.material.textfield.TextInputEditText-->
+    <!--                android:id="@+id/uiEtuseremail"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:hint="@string/androidx_startup" />-->
+    <!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+    <!--        <com.google.android.material.textfield.TextInputLayout-->
+    <!--            android:layout_width="367dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:hint="Enter password :"-->
+    <!--            android:padding="10dp">-->
+
+    <!--            <com.google.android.material.textfield.TextInputEditText-->
+    <!--                android:id="@+id/uiEtuserpassword"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="56dp"-->
+    <!--                android:inputType="textPassword"-->
+    <!--                android:password="true" />-->
+    <!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/textView5"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:padding="10dp"-->
+    <!--            android:paddingLeft="20dp"-->
+    <!--            android:text="Gender"-->
+    <!--            android:textSize="20sp"-->
+    <!--            android:textStyle="bold|italic" />-->
+
+    <!--        <Spinner-->
+    <!--            android:id="@+id/usergender"-->
+    <!--            android:layout_width="306dp"-->
+    <!--            android:layout_height="40dp"-->
+    <!--            android:backgroundTintMode="add"-->
+    <!--            android:focusedByDefault="true"-->
+
+    <!--            android:outlineAmbientShadowColor="#771A1A"-->
+    <!--            android:outlineSpotShadowColor="#751C1C"-->
+    <!--            android:padding="10dp"-->
+    <!--            android:theme="?attr/dropDownListViewStyle" />-->
+
+    <!--    </LinearLayout>-->
+
+
+<!--    <androidx.appcompat.widget.AppCompatTextView-->
+<!--        android:id="@+id/uiTvCaptionUserName"-->
+<!--        android:layout_width="77dp"-->
+<!--        android:layout_height="22dp"-->
+<!--        android:layout_marginStart="52dp"-->
+<!--        android:layout_marginTop="164dp"-->
+<!--        android:ellipsize="marquee"-->
+<!--        android:marqueeRepeatLimit="marquee_forever"-->
+<!--        android:scrollHorizontally="true"-->
+<!--        android:singleLine="true"-->
+<!--        android:text="@string/str_caption_name"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <androidx.appcompat.widget.AppCompatEditText-->
+<!--        android:id="@+id/uiEtUserName"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="112dp"-->
+<!--        android:hint="@string/str_hint_name"-->
+<!--        android:inputType="textPersonName"-->
+<!--        android:minHeight="48dp"-->
+<!--        android:textSize="13sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/uiTvCaptionUserName"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/uiTvCaptionUserName"-->
+<!--        app:layout_constraintVertical_bias="0.36" />-->
+
+<!--    <androidx.appcompat.widget.AppCompatTextView-->
+<!--        android:id="@+id/uiTvCaptionUserEmail"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="48dp"-->
+<!--        android:text="@string/str_caption_email_address"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/uiTvCaptionUserName"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/uiTvCaptionUserName" />-->
+
+<!--    <androidx.appcompat.widget.AppCompatEditText-->
+<!--        android:id="@+id/uiEtUserEmail"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="@string/str_hint_email"-->
+<!--        android:inputType="textPersonName"-->
+<!--        android:minHeight="48dp"-->
+<!--        android:textSize="13sp"-->
+
+<!--        app:layout_constraintBottom_toBottomOf="@+id/uiTvCaptionUserEmail"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/uiEtUserName"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/uiTvCaptionUserEmail"-->
+<!--        app:layout_constraintVertical_bias="0.0" />-->
+
+<!--    <androidx.appcompat.widget.AppCompatTextView-->
+<!--        android:id="@+id/uiTvCaptionUserPassword"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="60dp"-->
+<!--        android:text="@string/str_caption_password"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/uiTvCaptionUserEmail"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/uiTvCaptionUserEmail" />-->
+
+<!--    <androidx.appcompat.widget.AppCompatEditText-->
+<!--        android:id="@+id/uiEtUserPassword"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="@string/str_hint_password"-->
+<!--        android:inputType="textPersonName"-->
+<!--        android:minHeight="48dp"-->
+<!--        android:textSize="13sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/uiTvCaptionUserPassword"-->
+
+<!--        app:layout_constraintStart_toStartOf="@+id/uiEtUserEmail"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/uiTvCaptionUserPassword"-->
+<!--        app:layout_constraintVertical_bias="0.413" />-->
+
+<!--    <androidx.appcompat.widget.AppCompatTextView-->
+<!--        android:id="@+id/uiTvCaptionUserGender"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="48dp"-->
+<!--        android:text="@string/str_caption_gender"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/uiTvCaptionUserPassword"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/uiTvCaptionUserPassword" />-->
+
+<!--    <androidx.appcompat.widget.AppCompatSpinner-->
+<!--        android:id="@+id/uiSpUserGender"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:entries="@array/userGender"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/uiTvCaptionUserGender"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/uiEtUserPassword"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/uiTvCaptionUserGender"-->
+<!--        tools:ignore="TouchTargetSizeCheck" />-->
+
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:id="@+id/uiSubmitButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="56dp"-->
+<!--        android:text="@string/str_button_name"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/uiTvCaptionUserGender" />-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->

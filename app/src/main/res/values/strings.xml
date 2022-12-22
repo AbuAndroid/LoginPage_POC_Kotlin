@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">LoginApplication</string>
+    <string name="str_caption_name">Name :</string>
+    <string name="str_caption_email">Email :</string>
+    <string name="str_caption_password">Password :</string>
+    <string name="str_caption_gender">Gender :</string>
+
+    <string-array name="str_rray_gender_list">
+        <item>Male</item>
+        <item>Female</item>
+        <item>TransGender</item>
+    </string-array>
+</resources>
