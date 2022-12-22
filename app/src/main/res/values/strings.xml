@@ -4,6 +4,19 @@
     <string name="str_caption_email">Email :</string>
     <string name="str_caption_password">Password :</string>
     <string name="str_caption_gender">Gender :</string>
+    <string name="str_button_name">submit</string>
+    <string name="str_hint_name">Please Enter Your Name :</string>
+    <string name="str_hint_email">Please Enter Your Email :</string>
+    <string name="str_hint_password">Please Enter Your Password :</string>
+    <string name="str_second_caption_name">User Name :</string>
+    <string name="str_second_caption_email">User Email :</string>
+    <string name="str_second_caption_password">User Password :</string>
+    <string name="str_second_caption_gender">User Gender :</string>
+    <string name="msg_enter_empty_email">Please Enter Email address…</string>
+    <string name="msg_enter_vaid_email">Please Enter Valid Email Address....</string>
+    <string name="msg_enter_empty_password">please Enter Your Password...</string>
+    <string name="msg_enter_valid_password">Please Enter Valid Email Address...</string>
+    <string name="msg_enter_valid_username">Plese Enter username!!</string>
 
     <string-array name="str_rray_gender_list">
         <item>Male</item>

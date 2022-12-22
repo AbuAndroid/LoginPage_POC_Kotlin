@@ -3,16 +3,15 @@ package com.example.loginapplication
 import java.util.regex.Pattern
 
 class Constants {
-
-    private final val USER_DETAILS = "userdetails"
-    private final val USER_NAME = "username"
-    private final val USER_EMAIL = "useremail"
-    private final val USER_PASSWORD = "userpassword"
-    private final val USER_GENDER = "usergender"
-    private final val PASSWORD_PATTERN = Pattern.compile("^" + "(?=.*[@#$%^&+=])" +     // at least 1 special character
-            "(?=\\S+$)" +            // no white spaces
-            ".{4,}" +                // at least 4 characters
-            "$");
-
-
+    companion object{
+        const val USER_DETAILS = "userdetails"
+        const val USER_NAME = "username"
+        const val USER_EMAIL = "useremail"
+        const val USER_PASSWORD = "userpassword"
+        const val USER_GENDER = "usergender"
+        val PASSWORD_PATTERN: Pattern? = Pattern.compile("^" + "(?=.*[@#$%^&+=])" +     // at least 1 special character
+                "(?=\\S+$)" +            // no white spaces
+                ".{4,}" +                // at least 4 characters
+                "$")
+    }
 }
