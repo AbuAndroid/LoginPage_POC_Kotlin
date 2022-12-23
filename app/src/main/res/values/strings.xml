@@ -23,4 +23,13 @@
         <item>Female</item>
         <item>TransGender</item>
     </string-array>
+
+    <string name="str_toolbar_text">Edit Screen</string>
+    <string-array name="str_array_programming_languages">
+        <item>C</item>
+        <item>C++</item>
+        <item>Java</item>
+        <item>Python</item>
+        <item>Kotlin</item>
+    </string-array>
 </resources>

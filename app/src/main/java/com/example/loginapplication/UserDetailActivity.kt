@@ -1,6 +1,8 @@
 package com.example.loginapplication
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
@@ -10,6 +12,7 @@ class UserDetailActivity : AppCompatActivity() {
     private var uiEtUserEmail: TextView? = null
     private var uiEtUserPassword: TextView? = null
     private var uiSpGender: TextView? = null
+    private var btn : Button? = null
 
     private val sharedPreferences : CommonSharedPreferences by lazy {
         CommonSharedPreferences(this)
@@ -19,6 +22,11 @@ class UserDetailActivity : AppCompatActivity() {
         setContentView(R.layout.activity_user_detail)
         setUpUI()
         setDataToUi()
+
+        btn?.setOnClickListener {
+            val Intent = Intent(this,ScrollableActivity::class.java)
+            startActivity(Intent)
+        }
     }
 
     private fun setUpUI() {
@@ -26,6 +34,7 @@ class UserDetailActivity : AppCompatActivity() {
         uiEtUserEmail = findViewById(R.id.uiTvUseremail)
         uiEtUserPassword = findViewById(R.id.uiTvUserpassword)
         uiSpGender = findViewById(R.id.uiTvUserGender)
+        btn = findViewById(R.id.btnnext)
     }
 
     private fun setDataToUi() {

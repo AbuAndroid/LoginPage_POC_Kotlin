@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/uiAppbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/str_toolbar_text"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
+        app:layout_constraintEnd_toEndOf="@+id/uiAppbar"
+        app:layout_constraintStart_toStartOf="@+id/uiAppbar"
+        app:layout_constraintTop_toBottomOf="@+id/uiAppbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/uiTvname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:padding="10dp"
+                android:text="Name :"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/uiEtname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:hint="Enter Your Name"
+                app:layout_constraintEnd_toEndOf="@+id/uiTvname"
+                app:layout_constraintStart_toStartOf="@id/uiTvname"
+                app:layout_constraintTop_toBottomOf="@id/uiTvname" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/uiTvemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:padding="10dp"
+                android:text="Email :"
+                app:layout_constraintEnd_toEndOf="@+id/uiEtname"
+                app:layout_constraintStart_toStartOf="@+id/uiEtname"
+                app:layout_constraintTop_toBottomOf="@+id/uiEtname" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/uiEtemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:hint="Enter Your Email"
+                app:layout_constraintEnd_toEndOf="@+id/uiTvemail"
+                app:layout_constraintStart_toStartOf="@+id/uiTvemail"
+                app:layout_constraintTop_toBottomOf="@+id/uiTvemail" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/uiTvpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:padding="10dp"
+                android:text="Password :"
+                app:layout_constraintEnd_toEndOf="@+id/uiEtemail"
+                app:layout_constraintStart_toStartOf="@+id/uiEtemail"
+                app:layout_constraintTop_toBottomOf="@+id/uiEtemail" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/uiEtpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:hint="Enter your Password..."
+                app:layout_constraintEnd_toEndOf="@+id/uiTvpassword"
+                app:layout_constraintStart_toStartOf="@+id/uiTvpassword"
+                app:layout_constraintTop_toBottomOf="@+id/uiTvpassword" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/uiTvgender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:text="Gender :"
+                app:layout_constraintEnd_toEndOf="@+id/uiEtpassword"
+                app:layout_constraintStart_toStartOf="@+id/uiEtpassword"
+                app:layout_constraintTop_toBottomOf="@+id/uiEtpassword" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/uiEtgender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:hint="Enter your Gender..."
+                app:layout_constraintEnd_toEndOf="@+id/uiTvgender"
+                app:layout_constraintStart_toStartOf="@+id/uiTvgender"
+                app:layout_constraintTop_toBottomOf="@+id/uiTvgender" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/uiTvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:padding="10dp"
+                android:text="Title :"
+                app:layout_constraintEnd_toEndOf="@+id/uiEtgender"
+                app:layout_constraintStart_toStartOf="@+id/uiEtgender"
+                app:layout_constraintTop_toBottomOf="@+id/uiEtgender" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/uiEtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:hint="Enter Title..."
+                app:layout_constraintEnd_toEndOf="@+id/uiTvTitle"
+                app:layout_constraintStart_toStartOf="@+id/uiTvTitle"
+                app:layout_constraintTop_toBottomOf="@+id/uiTvTitle" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/uiTvDescription"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:padding="10dp"
+                android:text="Description :"
+                app:layout_constraintEnd_toEndOf="@+id/uiEtTitle"
+                app:layout_constraintStart_toStartOf="@+id/uiEtTitle"
+                app:layout_constraintTop_toBottomOf="@+id/uiEtTitle" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/uiEtDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:hint="Enter Description..."
+                app:layout_constraintEnd_toEndOf="@+id/uiTvDescription"
+                app:layout_constraintStart_toStartOf="@+id/uiTvDescription"
+                app:layout_constraintTop_toBottomOf="@+id/uiTvDescription"
+                tools:ignore="DuplicateClickableBoundsCheck" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/uiTvEpisode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:padding="10dp"
+                android:text="Episode :"
+                app:layout_constraintEnd_toEndOf="@+id/uiEtDescription"
+                app:layout_constraintStart_toStartOf="@+id/uiEtDescription"
+                app:layout_constraintTop_toBottomOf="@+id/uiEtDescription" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/uiEtEpisode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:hint="Enter Episode..."
+                app:layout_constraintEnd_toEndOf="@+id/uiTvEpisode"
+                app:layout_constraintStart_toStartOf="@+id/uiTvEpisode"
+                app:layout_constraintTop_toBottomOf="@+id/uiTvEpisode" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/uiEtSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Location "
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                app:layout_constraintStart_toStartOf="@+id/uiEtEpisode"
+                app:layout_constraintTop_toBottomOf="@+id/uiEtEpisode" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/uiBtsearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Search"
+                app:layout_constraintBottom_toBottomOf="@+id/uiEtSearch"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/uiEtSearch"
+                app:layout_constraintTop_toTopOf="@+id/uiEtSearch" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/uiTvDayNumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:padding="10dp"
+                android:text="Day Number :"
+                app:layout_constraintEnd_toEndOf="@+id/uiEtSearch"
+                app:layout_constraintStart_toStartOf="@+id/uiEtSearch"
+                app:layout_constraintTop_toBottomOf="@+id/uiEtSearch" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/uiEtDayNumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:hint="Day number... "
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/uiTvDayNumber"
+                app:layout_constraintStart_toStartOf="@+id/uiTvDayNumber"
+                app:layout_constraintTop_toBottomOf="@+id/uiTvDayNumber"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/uiTvAtGender"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:padding="10dp"
+                android:text="Programming language :"
+                app:layout_constraintEnd_toEndOf="@+id/uiEtDayNumber"
+                app:layout_constraintStart_toStartOf="@+id/uiEtDayNumber"
+                app:layout_constraintTop_toBottomOf="@+id/uiEtDayNumber" />
+
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/uiActGnder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:hint="Choose Programming language.."
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/uiTvAtGender"
+                app:layout_constraintStart_toStartOf="@+id/uiTvAtGender"
+                app:layout_constraintTop_toBottomOf="@+id/uiTvAtGender" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button"
+                tools:layout_editor_absoluteY="112dp"
+                app:layout_constraintTop_toBottomOf="@+id/uiActGnder"
+                app:layout_constraintStart_toStartOf="@+id/uiActGnder"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
